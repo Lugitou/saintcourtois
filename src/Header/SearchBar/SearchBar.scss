@@ -1,0 +1,15 @@
+.SearchBar {
+
+  .search {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    background: rgba(76, 41, 35, 0.2);
+    border-radius: 90px;
+    padding: 7px 20px;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+}
