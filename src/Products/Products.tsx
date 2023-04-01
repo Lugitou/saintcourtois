@@ -1,7 +1,14 @@
+import "./Products.scss";
 function Products() {
   return (
     <section>
-      <h1>Products</h1>
+        <div className={"Products"}>
+            <div className={"productHead"}>
+                <h3>Les Nouveautés</h3>
+                <span>Voir plus</span>
+            </div>
+
+        </div>
     </section>
   );
 }

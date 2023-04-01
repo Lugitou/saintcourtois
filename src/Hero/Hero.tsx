@@ -3,8 +3,8 @@ function Hero() {
 
     return (
         <div className="Hero">
-            <img className={"heroIllustration"} src={require("../assets/Hero.svg").default} alt="Hero" />
-            <div className={"heroGradient"}></div>
+            <div className={"heroIllustration"} style={{backgroundImage: `url(${require("../assets/Hero.png")})`}}></div>
+            <div className="heroGradient"></div>
             <h2>Seconde Main, Premier Choix</h2>
         </div>
     );
