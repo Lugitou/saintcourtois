@@ -3,9 +3,28 @@ section {
   background: #4C2923;
 
   .Products {
-    background: coral;
     width: 87.5%;
     height: 90%;
     margin-left: 12.5%;
+
+    .productHead {
+      width: 85%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        color: white;
+      }
+
+      span {
+        color: #D98E63;
+      }
+    }
+
+    .productList {
+      display: flex;
+    }
   }
 }
