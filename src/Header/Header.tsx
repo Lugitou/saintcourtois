@@ -9,10 +9,8 @@ function Header() {
     return (
         <div className={"header"}>
             <div className={"mainHeader"}>
-                <div className={"left"}>
-                    <Logo />
-                </div>
-                <div className={"right"}>
+                <Logo />
+                <div className={"rightHeader"}>
                     <SearchBar />
                     <Sell />
                     <Cart />

@@ -1,0 +1,27 @@
+.Hero {
+  background: #4C2923;
+  height: 250px;
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  .heroIllustration {
+    width: 100%;
+    height: 100%;
+  }
+
+  .heroGradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(76, 41, 35, 0) -82.85%, #4C2923 100%);
+  }
+
+  h2 {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+    color: white;
+  }
+}
