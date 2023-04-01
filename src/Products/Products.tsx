@@ -7,6 +7,7 @@ function Products() {
         {
             id: 0,
             name: "Sweetshirt Louis Vuitton",
+            path: "T-shirt.png",
             seller: "",
             expert: true,
             price: 800,
@@ -16,6 +17,7 @@ function Products() {
         {
             id: 1,
             name: "",
+            path: null,
             seller: "",
             expert: false,
             price: null,
@@ -25,6 +27,7 @@ function Products() {
         {
             id: 1,
             name: "",
+            path: null,
             seller: "",
             expert: false,
             price: null,
@@ -34,6 +37,7 @@ function Products() {
         {
             id: 1,
             name: "",
+            path: null,
             seller: "",
             expert: false,
             price: null,
