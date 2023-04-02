@@ -1,7 +1,12 @@
+import "./Footer.scss";
+import FooterTop from "./FooterTop";
+import FooterBottom from "./FooterBottom";
+
 function Footer() {
     return (
-        <div className="footer">
-            <h1>Footer</h1>
+        <div className="Footer">
+            <FooterTop />
+            <FooterBottom />
         </div>
     )
 }

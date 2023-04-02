@@ -6,7 +6,10 @@ function Card(props: any) {
 
 	  return <div className={"Card"} key={product.id}>
 		  <div className={"cardMain"}>
-			  <img className={"cardIllustration"} src={product.path ? require(`../../assets/${product.path}`) : ""} alt={""} />
+			  { product.path ?
+			    <img className={"cardIllustration"} src={product.path ? require(`../../assets/${product.path}`) : ""} alt={""} />
+				  : ""
+			  }
 			  { product.expert ?
 				  (<span className={"expert"}>
 					  <img className={"star"} src={require("../../assets/Star.svg").default} alt={"star"} />

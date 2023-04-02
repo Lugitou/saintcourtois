@@ -4,7 +4,7 @@ function CallToAction() {
 	<div className="CallToAction">
 	  <div className={"actionBox"}>
 		  <div className={"actionLeft"}>
-			Videz vos placards, faits de la place et gagnez de l'argent
+			Videz vos placards, faits de la place et gagnez de l'argent !
 		  </div>
 		  <div className={"actionRight"}>
 			  <button className={"actionButton"}>Vendre un article</button>

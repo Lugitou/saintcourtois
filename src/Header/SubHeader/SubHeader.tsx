@@ -36,7 +36,7 @@ function SubHeader() {
     {
         menu.map((item) => {
             return (
-                <div key={item.id} className={"SubHeader__item"}>
+                <div key={item.id} className={"SubHeaderItem"}>
                     {item.name}
                 </div>
             )
