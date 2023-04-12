@@ -6,8 +6,28 @@
   align-items: center;
   color: white;
   font-size: 120%;
+  position: relative;
 
-  div {
+  .SubHeaderItem {
+    height: 100%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .underline {
+    &:after {
+      content: '';
+      width: 100%;
+      position: absolute;
+      color: white;
+      bottom: 0;
+      left: 0;
+      height: 5px;
+      z-index: 3;
+      background: white;
+      border-radius: 5px;
+    }
   }
 }

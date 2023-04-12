@@ -1,48 +1,26 @@
 import "./SubHeader.scss";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import Dropdown from "./Dropdown";
+import { default as dropdownConfig } from "./DropdownConfig";
+
 function SubHeader() {
 
-  const [menu, setMenu] = useState([
-    {
-        id: 1,
-        name: "Nouveautés",
-    },
-    {
-        id: 2,
-        name: "Promos",
-    }, {
-        id: 3,
-        name: "Femmes",
-    },
-    {
-        id: 4,
-        name: "Hommes",
-    }, {
-        id: 5,
-        name: "Enfants",
-    }, {
-        id: 6,
-        name: "Vêtements",
-    }, {
-        id: 7,
-        name: "Chaussures",
-    }, {
-        id: 8,
-        name: "Accessoires",
-    }
-  ]);
+	const [menu, setMenu] = useState(dropdownConfig);
 
-  return <div className={"SubHeader"}>
-    {
-        menu.map((item) => {
-            return (
-                <div key={item.id} className={"SubHeaderItem"}>
-                    {item.name}
-                </div>
-            )
-        })
-    }
-  </div>;
+	const [openDropdownId, setOpenDropdownId] = useState(-1);
+
+	return <div className={"SubHeader"} onMouseLeave={() => setOpenDropdownId(-1)}>
+		{
+			menu.map((item) => {
+				return (
+					<div key={item.id} className={ item.id === openDropdownId ? "SubHeaderItem underline" : "SubHeaderItem"} onMouseEnter={() => setOpenDropdownId(item.id)}>
+						{item.name}
+					</div>
+				)
+			})
+		}
+		{openDropdownId !== -1 ? <Dropdown id={openDropdownId} item={menu[openDropdownId - 1]} /> : null}
+	</div>;
 }
 
 export default SubHeader;

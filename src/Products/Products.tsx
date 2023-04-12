@@ -25,7 +25,7 @@ function Products() {
             like: null
         },
         {
-            id: 1,
+            id: 2,
             name: "",
             path: null,
             seller: "",
@@ -35,7 +35,7 @@ function Products() {
             like: null
         },
         {
-            id: 1,
+            id: 3,
             name: "",
             path: null,
             seller: "",
@@ -57,7 +57,7 @@ function Products() {
                     {
                         products.map((item) => {
                             return (
-                                <Card product={item} />
+                                <Card product={item} key={item.id} />
                             )
                         })
                     }
