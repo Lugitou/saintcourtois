@@ -1,51 +1,51 @@
-.FooterBottom {
-  display: flex;
-  height: 50%;
-  width: 90%;
-  align-items: center;
-  justify-content: space-between;
-
-  .logoFooter {
-    height: 100%;
+@media (min-width: 1000px) {
+  .FooterBottom {
     display: flex;
+    height: 50%;
+    width: 90%;
     align-items: center;
+    justify-content: space-between;
 
-    img {
-      height: 50%;
-    }
-  }
-
-  .footerBrands {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    gap: 15px;
-
-    .socials {
+    .logoFooter {
+      height: 100%;
       display: flex;
       align-items: center;
-      gap: 10px;
 
       img {
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
+        height: 50%;
       }
     }
 
-    .payBrand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .footerBrands {
 
-      img {
-        height: 45px;
-        width: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      gap: 15px;
+
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          height: 50px;
+          width: 50px;
+          cursor: pointer;
+        }
+      }
+
+      .payBrand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          height: 45px;
+          width: 45px;
+        }
       }
     }
   }
-
-
 }

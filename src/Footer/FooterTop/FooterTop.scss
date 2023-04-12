@@ -1,27 +1,29 @@
-.FooterTop {
-  width: 95%;
-  height: 50%;
-  border-bottom: 1px solid #F3E4D3;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 50px;
-
-  .footerColumn {
-    color: white;
+@media (min-width: 1000px) {
+  .FooterTop {
+    width: 95%;
+    height: 50%;
+    border-bottom: 1px solid #F3E4D3;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    justify-content: space-around;
+    padding-top: 50px;
 
-    h4 {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+    .footerColumn {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
 
-    p {
-      cursor: pointer;
+      h4 {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
 
-      &:hover {
-        text-decoration: underline;
+      p {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
