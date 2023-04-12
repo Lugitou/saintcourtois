@@ -1,46 +1,48 @@
-section {
-  height: 600px;
-  background: #4C2923;
+@media (min-width: 1000px) {
+  section {
+    height: 600px;
+    background: #4C2923;
 
-  .Products {
-    width: 100%;
-    height: 90%;
-    margin-left: 12.5%;
+    .Products {
+      width: 100%;
+      height: 90%;
+      margin-left: 12.5%;
 
-    .productHead {
-      width: 85%;
-      height: 20%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      .productHead {
+        width: 85%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-      h3 {
-        color: white;
-        font-size: 125%;
-      }
+        h3 {
+          color: white;
+          font-size: 125%;
+        }
 
-      span {
-        color: #D98E63;
-        cursor: pointer;
+        span {
+          color: #D98E63;
+          cursor: pointer;
 
-        &:hover {
-          text-decoration: underline;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
-    }
 
-    .productList {
-      width: 150vw;
-      height: 80%;
-      display: flex;
-      gap: 50px;
+      .productList {
+        width: 150vw;
+        height: 80%;
+        display: flex;
+        gap: 50px;
 
-      &.slideR {
-        animation: 2s slideRight ease-in-out forwards;
-      }
+        &.slideR {
+          animation: 2s slideRight ease-in-out forwards;
+        }
 
-      &.slideL {
-        animation: 2s slideLeft ease-in-out forwards;
+        &.slideL {
+          animation: 2s slideLeft ease-in-out forwards;
+        }
       }
     }
   }

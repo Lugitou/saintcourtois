@@ -1,41 +1,42 @@
-.Card {
-  width: 500px;
-  height: 100%;
+@media (min-width: 1000px) {
+  .Card {
+    width: 500px;
+    height: 100%;
 
-  .cardMain {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    background: #321B17;
-    border-radius: 10px;
-
-    .cardIllustration {
-      margin-top: 10%;
+    .cardMain {
+      width: 100%;
       height: 80%;
-    }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      background: #321B17;
+      border-radius: 10px;
 
-    .expert {
-      position: absolute;
-      top: 5%;
-      left: 5%;
-      border: 1px solid #D98E63;
-      padding: 10px 20px;
-      border-radius: 50px;
-      color: #D98E63;
-      font-size: 10px;
-
-      .star {
-        height: 10px;
-        width: 10px;
-        margin-right: 10px;
+      .cardIllustration {
+        margin-top: 10%;
+        height: 80%;
       }
-    }
 
-    .like {
+      .expert {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        border: 1px solid #D98E63;
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: #D98E63;
+        font-size: 10px;
+
+        .star {
+          height: 10px;
+          width: 10px;
+          margin-right: 10px;
+        }
+      }
+
+      .like {
         position: absolute;
         top: 5%;
         right: 5%;
@@ -60,34 +61,35 @@
             width: 40px;
           }
         }
-    }
-  }
-
-  .cardFooter {
-
-    margin-top: 15px;
-    height: 20%;
-
-    .articleName {
-      color: white;
-      font-size: 25px;
+      }
     }
 
-    .prices {
+    .cardFooter {
+
       margin-top: 15px;
-      display: flex;
-      gap: 10px;
+      height: 20%;
 
-      .basePrice {
-        color: #8E6159;
-        font-size: 30px;
-        text-decoration: line-through;
+      .articleName {
+        color: white;
+        font-size: 25px;
       }
 
-      .price {
-        color: #D98E63;
-        font-size: 45px;
-        font-weight: bold;
+      .prices {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+
+        .basePrice {
+          color: #8E6159;
+          font-size: 30px;
+          text-decoration: line-through;
+        }
+
+        .price {
+          color: #D98E63;
+          font-size: 45px;
+          font-weight: bold;
+        }
       }
     }
   }
