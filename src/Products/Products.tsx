@@ -46,14 +46,23 @@ function Products() {
         }
     ]);
 
+    const [slide, setSlide] = useState(false);
+
     return (
         <section>
             <div className={"Products"}>
                 <div className={"productHead"}>
                     <h3>Les Nouveautés</h3>
-                    <span>Voir plus</span>
+                    <span onClick={() => setSlide(!slide)}>
+                        {
+                            !slide ?
+                                "Voir plus"
+                                :
+                                "Voir moins"
+                        }
+                    </span>
                 </div>
-                <div className={"productList"}>
+                <div className={slide ? "productList slideR" : "productList slideL"}>
                     {
                         products.map((item) => {
                             return (
