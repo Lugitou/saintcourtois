@@ -28,3 +28,28 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .FooterTop {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid #F3E4D3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    .footerColumn {
+      color: white;
+
+
+      h4 {
+        cursor: pointer;
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+}

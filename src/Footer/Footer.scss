@@ -7,3 +7,13 @@
     align-items: center;
   }
 }
+
+@media (max-width: 1000px) {
+  .Footer {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
