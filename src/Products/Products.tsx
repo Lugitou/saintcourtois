@@ -53,13 +53,8 @@ function Products() {
             <div className={"Products"}>
                 <div className={"productHead"}>
                     <h3>Les Nouveautés</h3>
-                    <span onClick={() => setSlide(!slide)}>
-                        {
-                            !slide ?
-                                "Voir plus"
-                                :
-                                "Voir moins"
-                        }
+                    <span>
+                        <span>Voir plus</span>
                     </span>
                 </div>
                 <div className={slide ? "productList slideR" : "productList slideL"}>
@@ -71,6 +66,18 @@ function Products() {
                         })
                     }
                 </div>
+            </div>
+            <div className={"slideBtn"}>
+                <span className={"slideBtnLeft"} onClick={() => setSlide(false)}>
+                    <img src={require("../assets/Caret.svg").default} alt={""}/>
+                </span>
+                <span className={"position"}>
+                    <span className={slide ? "" : "active"}></span>
+                    <span className={slide ? "active" : ""}></span>
+                </span>
+                <span className={"slideBtnRight"} onClick={() => setSlide(true)}>
+                    <img src={require("../assets/Caret.svg").default} alt={""}/>
+                </span>
             </div>
         </section>
     );
